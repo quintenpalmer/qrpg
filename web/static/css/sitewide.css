@@ -1,0 +1,22 @@
+body {
+	margin:auto;
+	padding:0px;
+	background-color:#0cf;
+	text-align:center;
+}
+
+#mainCanvas {
+	border:2px solid #000000;
+	background-color:#228822;
+	display:block;
+	margin: 0 auto;
+}
+
+a:link, a:visited {
+	color:#fca;
+	text-decoration:none;
+}
+
+a:hover {
+    color:#fcc;
+}
