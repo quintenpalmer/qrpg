@@ -51,15 +51,15 @@ to the user.
 
 Package Structure
 =================
-bin/                Helper scripts  
-src/                Go source code  
-src/qrpg/           Game Logic Server code  
-src/qrpgweb/       Web Server code  
-web/                Web assets, static content, and templates  
-web/templates/      Templates  
-web/static/         Static html5 content  
-web/static/js       Javascript code  
-web/static/css      CSS  
-web/static/images   Image assets  
-backend.go          The "main" for the game logic server  
-frontend.go         The "main" for the web server  
+	bin/                Helper scripts  
+	src/                Go source code  
+	src/qrpg/           Game Logic Server code  
+	src/qrpgweb/       Web Server code  
+	web/                Web assets, static content, and templates  
+	web/templates/      Templates  
+	web/static/         Static html5 content  
+	web/static/js       Javascript code  
+	web/static/css      CSS  
+	web/static/images   Image assets  
+	backend.go          The "main" for the game logic server  
+	frontend.go         The "main" for the web server  
