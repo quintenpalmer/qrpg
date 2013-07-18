@@ -26,8 +26,8 @@ To run the web server:
 
 	go run frontend.go
 
-Introduction
-------------
+Overview
+--------
 There are three components:
 
 Game Logic Server
