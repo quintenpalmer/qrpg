@@ -1,4 +1,4 @@
-package qrpg
+package engine
 
 import (
 	"encoding/json"

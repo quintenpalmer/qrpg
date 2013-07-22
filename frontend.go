@@ -1,9 +1,9 @@
 package main
 
 import (
-	"qrpgweb"
+	"qrpg/web"
 )
 
 func main() {
-	qrpgweb.Main()
+	web.Main()
 }

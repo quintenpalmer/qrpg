@@ -1,4 +1,4 @@
-package qrpg
+package engine
 
 func Main() {
 	model := NewModel()

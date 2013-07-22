@@ -1,4 +1,4 @@
-package qrpg
+package engine
 
 type Loc struct {
 	x int

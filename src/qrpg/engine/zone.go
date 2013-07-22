@@ -1,4 +1,4 @@
-package qrpg
+package engine
 
 type Zone struct {
 	people []*Person

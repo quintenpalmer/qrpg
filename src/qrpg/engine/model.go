@@ -1,4 +1,4 @@
-package qrpg
+package engine
 
 type Model struct {
 	zone *Zone

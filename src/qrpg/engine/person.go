@@ -1,4 +1,4 @@
-package qrpg
+package engine
 
 type Person struct {
 	loc *Loc
