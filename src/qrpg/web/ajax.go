@@ -1,4 +1,4 @@
-package qrpgweb
+package web
 
 import (
 	"net"

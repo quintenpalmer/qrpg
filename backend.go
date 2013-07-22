@@ -1,9 +1,9 @@
 package main
 
 import (
-	"qrpg"
+	"qrpg/engine"
 )
 
 func main() {
-	qrpg.Main()
+	engine.Main()
 }
