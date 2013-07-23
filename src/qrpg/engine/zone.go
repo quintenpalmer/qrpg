@@ -21,6 +21,27 @@ func (zone *Zone) GetPersonFromName(name string) (*Person, error) {
 	return nil, NewQrpgError("Player not in Zone")
 }
 
+func (zone *Zone) PersonMove(name string, dir string) error {
+	person, err := zone.GetPersonFromName(name)
+	if err != nil {
+		return err
+	}
+	if zone.canMove(person) {
+		if dir == "up" {
+			person.loc.y -= 1
+		} else if dir == "down" {
+			person.loc.y += 1
+		} else if dir == "left" {
+			person.loc.x -= 1
+		} else if dir == "right" {
+			person.loc.x += 1
+		}
+		return nil
+	} else {
+		return NewQrpgError("Player not in battle")
+	}
+}
+
 func (zone *Zone) PersonJoin(person *Person) error {
 	zone.people = append(zone.people,person)
 	return nil
@@ -43,6 +64,10 @@ func (zone *Zone) PersonLeave(person *Person) error {
 	} else {
 		return NewQrpgError("Person not in zone!")
 	}
+}
+
+func (zone *Zone) canMove(person *Person) bool {
+	return !person.inBattle
 }
 
 func (zone *Zone) startBattle() {
