@@ -10,6 +10,15 @@ func NewZone() *Zone {
 	return zone
 }
 
+func (zone *Zone) GetPersonFromName(name string) (*Person, error) {
+	for _, person := range zone.people {
+		if person.name == name {
+			return person, nil
+		}
+	}
+	return nil, NewQrpgError("Player not in Zone")
+}
+
 func (zone *Zone) PersonJoin(person *Person) error {
 	zone.people = append(zone.people,person)
 	return nil

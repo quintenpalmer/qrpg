@@ -2,10 +2,12 @@ package engine
 
 type Person struct {
 	loc *Loc
+	name string
 }
 
-func NewPerson() *Person {
+func NewPerson(name string, x int, y int) *Person {
 	person := new(Person)
-	person.loc = NewLoc(0,0)
+	person.name = name
+	person.loc = NewLoc(x,y)
 	return person
 }
