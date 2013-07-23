@@ -25,6 +25,7 @@ func (zone *Zone) Serialize() (jsonMap, error) {
 		people = append(people,person_repr)
 	}
 	repr["people"] = people
+	repr["type"] = "zone"
 	return repr, nil
 }
 
