@@ -53,8 +53,9 @@ Package Structure
 =================
 	bin/                Helper scripts  
 	src/                Go source code  
-	src/qrpg/           Game Logic Server code  
-	src/qrpgweb/        Web Server code  
+	src/qrpg/           Packages  
+	src/qrpg/engine     Game Logic Server code  
+	src/qrpg/web/       Web Server code  
 	web/                Web assets, static content, and templates  
 	web/templates/      Templates  
 	web/static/         Static html5 content  
